@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    image-rendering: pixelated;
+}
+body {
+    background-color: #050505;
+    font-family: : 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-viewport {
+    position:relative;
+    width: 800px;
+    height: 600px;
+    background-color: #000;
+    overflow: hidden;
+    border: 4px solid #333;
+}
+
+.paralax.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 450px;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    will-change: transform;
+}
+
+#sky-layer {
+    background-image: url('https:/assets.codepen.io/21542/sky.png');
+    z-index: 1;
+}
